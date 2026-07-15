@@ -9,7 +9,7 @@ from .coordinator import FaceRecognitionCoordinator
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
-    api = FaceRecognitionBridgeApi(entry.data[CONF_BASE_URL], entry.data.get(CONF_API_TOKEN, ""))
+    api = FaceRecognitionBridgeApi(hass, entry.data[CONF_BASE_URL], entry.data.get(CONF_API_TOKEN, ""))
     coordinator = FaceRecognitionCoordinator(hass, api, entry.data[CONF_SCAN_INTERVAL])
     await coordinator.async_config_entry_first_refresh()
     hass.data.setdefault(DOMAIN, {})[entry.entry_id] = coordinator

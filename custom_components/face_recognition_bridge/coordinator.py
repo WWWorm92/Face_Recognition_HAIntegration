@@ -21,8 +21,8 @@ class FaceRecognitionCoordinator(DataUpdateCoordinator):
 
     async def _async_update_data(self) -> dict:
         try:
-            health = await self.hass.async_add_executor_job(self.api.get_health)
-            latest_event = await self.hass.async_add_executor_job(self.api.get_latest_event)
+            health = await self.api.get_health()
+            latest_event = await self.api.get_latest_event()
         except Exception as exc:
             raise UpdateFailed(str(exc)) from exc
 

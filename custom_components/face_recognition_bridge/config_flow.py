@@ -19,9 +19,9 @@ class FaceRecognitionBridgeConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             await self.async_set_unique_id(normalized_url)
             self._abort_if_unique_id_configured()
 
-            api = FaceRecognitionBridgeApi(normalized_url, user_input.get(CONF_API_TOKEN, ""))
+            api = FaceRecognitionBridgeApi(self.hass, normalized_url, user_input.get(CONF_API_TOKEN, ""))
             try:
-                await self.hass.async_add_executor_job(api.get_health)
+                await api.get_health()
             except Exception:
                 errors["base"] = "cannot_connect"
             else:
