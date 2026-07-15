@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Face Recognition Bridge",
+        "description": "Connect Home Assistant to the face recognition backend.",
+        "data": {
+          "base_url": "Backend URL",
+          "api_token": "API token",
+          "scan_interval": "Scan interval (seconds)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to backend",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This backend is already configured"
+    }
+  }
+}
