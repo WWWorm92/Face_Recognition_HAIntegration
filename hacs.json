@@ -1,0 +1,9 @@
+{
+  "name": "Face Recognition Bridge",
+  "render_readme": true,
+  "content_in_root": false,
+  "domains": [
+    "face_recognition_bridge"
+  ],
+  "homeassistant": "2024.1.0"
+}

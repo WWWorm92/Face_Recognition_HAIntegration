@@ -1,0 +1,13 @@
+{
+  "domain": "face_recognition_bridge",
+  "name": "Face Recognition Bridge",
+  "version": "0.1.0",
+  "documentation": "https://github.com/Lokosphinx/Face_Recognition_HA",
+  "issue_tracker": "https://github.com/Lokosphinx/Face_Recognition_HA/issues",
+  "dependencies": [],
+  "codeowners": ["@Lokosphinx"],
+  "requirements": ["requests==2.32.4"],
+  "config_flow": true,
+  "iot_class": "local_polling",
+  "homeassistant": "2024.1.0"
+}
