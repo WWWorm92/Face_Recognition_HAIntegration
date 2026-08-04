@@ -9,14 +9,25 @@
           "api_token": "API token",
           "scan_interval": "Scan interval (seconds)"
         }
+      },
+      "reconfigure": {
+        "title": "Reconfigure Face Recognition Bridge",
+        "description": "Update the backend connection settings.",
+        "data": {
+          "base_url": "Backend URL",
+          "api_token": "API token",
+          "scan_interval": "Scan interval (seconds)"
+        }
       }
     },
     "error": {
       "cannot_connect": "Failed to connect to backend",
+      "already_configured": "This backend is already configured",
       "unknown": "Unexpected error"
     },
     "abort": {
-      "already_configured": "This backend is already configured"
+      "already_configured": "This backend is already configured",
+      "reconfigure_successful": "Configuration updated successfully"
     }
   }
 }
