@@ -1,7 +1,7 @@
 {
   "domain": "face_recognition_bridge",
   "name": "Face Recognition Bridge",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "documentation": "https://github.com/Lokosphinx/Face_Recognition_HA",
   "issue_tracker": "https://github.com/Lokosphinx/Face_Recognition_HA/issues",
   "dependencies": [],
