@@ -1,8 +1,11 @@
 # Face Recognition Bridge for Home Assistant
 
+[Backend](https://github.com/WWWorm92/Face_Recognition_Backend) · [Установка через HACS](#установка-через-hacs) · [Сообщить о проблеме](https://github.com/WWWorm92/Face_Recognition_HAIntegration/issues)
+
+
 Интеграция связывает Home Assistant с моим отдельным backend-сервисом распознавания лиц. Само распознавание выполняется не внутри Home Assistant: интеграция только получает последние события через локальный API и превращает их в сущности и события HA.
 
-Backend находится в репозитории `WWWorm92/Face_Recognition_Backend` и должен быть запущен отдельно.
+Backend находится в репозитории [Face Recognition Backend](https://github.com/WWWorm92/Face_Recognition_Backend) и должен быть запущен отдельно.
 
 ## Что появляется в Home Assistant
 
